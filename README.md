@@ -2,7 +2,7 @@
 Simple JavaScript Able to Automation Unsubscribe to all Youtube Channels Without Doing It Manually 
 
 ## Installation :
-git clone https://github.com/doophack/Unsubscribe.git
+git clone https://github.com/r2dr0dn/Unsubscribe.git
 
 ## Usage: 
 Go to :
