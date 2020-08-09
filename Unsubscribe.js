@@ -1,6 +1,6 @@
 var i = 0;
 
-var myVar = setInterval(myTimer, 200);
+var myVar = setInterval(myTimer, 600);
 
 function myTimer () {
 
@@ -8,19 +8,23 @@ function myTimer () {
 
     if (i < els.length) {
 
-        els[i].querySelector('.ytd-subscribe-button-renderer').click();
+	if(els[i].querySelector('.ytd-subscribe-button-renderer')){
+				els[i].querySelector('.ytd-subscribe-button-renderer').click();
 
-        setTimeout(function () {
+			setTimeout(function () {
 
-            var unSubBtn = document.getElementById("confirm-button").click();
+				var unSubBtn = document.getElementById("confirm-button").click();
 
-        }, 500);
+			}, 1000);
 
-        setTimeout(function () {
+			setTimeout(function () {
 
-            els[i].parentNode.removeChild(els[i]);
+				els[i].parentNode.removeChild(els[i]);
 
-        }, 1000);
+			}, 2000);
+	}
+
+
     }
 
     i++;
